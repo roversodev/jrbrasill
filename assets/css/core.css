@@ -30624,3 +30624,57 @@ z-index: 9999999 !important;  /* Aumente o valor conforme necessário */
 .dark-version .badge-dot .text-dark {
   color: #fff !important;
 }
+
+.text-header {
+  color: rgb(15, 23, 42) !important;
+}
+
+.text-subheader {
+  color: rgb(51, 65, 85) !important;
+}
+
+.navbar.navbar-transparent .navbar-toggler .navbar-toggler-icon .navbar-toggler-bar {
+  background: #333 !important;
+}
+
+.cCard {
+  margin-top: -20px;
+}
+
+@media (max-width:768px) {
+  .cCard {
+    margin-top: 0;
+  }
+}
+
+* {
+  font-family: Inter, Inter Placeholder, sans-serif;
+}
+
+
+ .card.bg-dark {
+  position: relative;
+  background-color: #191919; /* Cor de fundo escuro, pode ser ajustada conforme o seu design */
+}
+
+.card.bg-dark::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%; /* A imagem vai ocupar a largura total do card */
+  height: 100%; /* Ajuste a altura da imagem conforme necessário */
+  background-image: url('../gradient-desk.png');
+  background-position: bottom center; /* Focar na parte inferior da imagem */
+  z-index: 0; /* Para garantir que a imagem fique atrás do conteúdo do card */
+  background-repeat: no-repeat;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+@media (max-width: 990px) {
+  .card.bg-dark::after {
+    background-image: url('../gradient.png');
+  }
+}
